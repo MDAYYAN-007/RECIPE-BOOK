@@ -1,0 +1,68 @@
+body{
+    height: 95vh;
+    background-color: #dad3f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Sofia',sans-serif;
+    font-size: 110%;
+}
+
+.container{
+    height: 400px;
+    width: 900px;
+    background-color: white;
+    padding: 20px;
+}
+
+input{
+    display: none;
+}
+
+.tabs{
+    float: left;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    height: 50px;
+    width: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 120%;
+}
+
+h2{
+    margin-top: 0;
+}
+
+.text-content{
+    float: right;
+    width: 75%;
+}
+
+.text{
+    display: none;
+}
+
+.text-content .home{
+    display: block;
+}
+
+#home:checked ~ .text-content .home,
+#blog:checked ~ .text-content .blog,
+#help:checked ~ .text-content .help,
+#code:checked ~ .text-content .code,
+#about:checked ~ .text-content .about{
+    display: block;
+}
+
+#blog:checked ~ .text-content .home,
+#help:checked ~ .text-content .home,
+#code:checked ~ .text-content .home,
+#about:checked ~ .text-content .home{
+    display: none;
+}
