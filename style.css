@@ -31,7 +31,7 @@ body{
     height: 550px;
     position: relative;
     transition: transform 1s;
-    filter: drop-shadow(0px 0px 10px white);
+    filter: drop-shadow(0px 0px 14px white);
     border-radius: 20px;
     /* border-radius: 0px;
     background: #ffffff;
@@ -83,6 +83,8 @@ body{
 .back-content{
     height: 100%;
     width: 100%;
+    box-sizing: border-box;
+    padding-right: 5px;
 }
 
 .back-content{
@@ -134,7 +136,7 @@ body{
     transition: transform .8s ;
     width: 32px;
     height: 35px;
-    filter: drop-shadow(0px 0px 5px white);
+    filter: drop-shadow(0px 0px 10px white);
 } 
 
 #prev,#next{
@@ -267,8 +269,8 @@ h3{
 }
 
 .front h3{
-    margin-top:10px;
-    margin-bottom: 10px;
+    margin-top:7px;
+    margin-bottom: 7px;
 }
 
 .front p{
@@ -283,9 +285,10 @@ h3{
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
+    text-shadow: 3px 3px 3px #ababab;
 }
 
-#f1 .front-content,#b10 .back-content{
+#f1 .front-content{
     font-size: 50px;
     font-family: "Sofia", sans-serif;
     display: flex;
@@ -296,7 +299,7 @@ h3{
 
 #f1 .f1top{
     margin-top: 300px;
-    margin-right: 70px;
+    margin-right: 40px;
 }
 
 #b1{
@@ -331,7 +334,7 @@ h3{
 }
 
 #b1 p{
-    width: 60%;
+    width: 55%;
     margin-top: 70px ;
     font-size: larger;
 }
@@ -391,4 +394,29 @@ h3{
     100% {
       background-position: 0px -400%;
     }
+}
+
+#b10 .back-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.b10top{
+    font-size: 50px;
+    font-family: "Sofia", sans-serif;
+    text-shadow: 3px 3px 3px #ababab;
+}
+
+.b10middle{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    font-size: 30px;
+    font-family: "Stylish", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-shadow: 3px 3px 3px #ababab;
 }
